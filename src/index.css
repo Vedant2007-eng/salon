@@ -1,0 +1,102 @@
+@import "tailwindcss";
+
+@theme {
+  --color-ivory: #F6F0E8;
+  --color-ivory-light: #FCF9F5;
+  --color-ivory-dark: #EADDCF;
+  --color-espresso: #292522;
+  --color-espresso-muted: #5C554E;
+  --color-dark: #171717;
+  --color-dark-card: #202020;
+  --color-dark-border: #2C2C2C;
+  --color-gold: #C8A66A;
+  --color-gold-light: #E4C892;
+  --color-gold-dark: #9F7E41;
+  --color-rose: #D9B8AE;
+  --color-rose-light: #EBD9D2;
+
+  --font-serif: "Playfair Display", Georgia, serif;
+  --font-sans: "DM Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+}
+
+:root {
+  --bg-ivory: #F6F0E8;
+  --text-espresso: #292522;
+  --accent-gold: #C8A66A;
+  --accent-rose: #D9B8AE;
+  --dark-bg: #171717;
+}
+
+/* Custom smooth scroll and typography base */
+html {
+  scroll-behavior: smooth;
+  font-family: var(--font-sans);
+  background-color: #F6F0E8;
+  color: #292522;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+  background-color: #F6F0E8;
+  color: #292522;
+}
+
+/* Headings font utility */
+h1, h2, h3, h4, .font-serif {
+  font-family: var(--font-serif);
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+::-webkit-scrollbar-track {
+  background: #F6F0E8;
+}
+::-webkit-scrollbar-thumb {
+  background: #C8A66A;
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #9F7E41;
+}
+
+/* Focus styles for accessibility */
+*:focus-visible {
+  outline: 2px solid #C8A66A;
+  outline-offset: 3px;
+}
+
+/* Subtle gold shimmer effect for luxury badges */
+@keyframes shimmer {
+  0% { background-position: -200% 0; }
+  100% { background-position: 200% 0; }
+}
+
+.gold-gradient-text {
+  background: linear-gradient(135deg, #D4AF37 0%, #C8A66A 50%, #B38F4D 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.gold-border-glow {
+  border: 1px solid rgba(200, 166, 106, 0.35);
+  transition: all 0.3s ease;
+}
+
+.gold-border-glow:hover {
+  border-color: rgba(200, 166, 106, 0.8);
+  box-shadow: 0 4px 20px -2px rgba(200, 166, 106, 0.2);
+}
+
+/* Reduced motion accessibility */
+@media (prefers-reduced-motion: reduce) {
+  *, ::before, ::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}

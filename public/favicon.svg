@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" width="100" height="100">
+  <defs>
+    <linearGradient id="goldGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#E5C789"/>
+      <stop offset="50%" stop-color="#C8A66A"/>
+      <stop offset="100%" stop-color="#9C7938"/>
+    </linearGradient>
+  </defs>
+  <rect width="100" height="100" rx="24" fill="#171717"/>
+  <rect x="5" y="5" width="90" height="90" rx="20" fill="none" stroke="url(#goldGrad)" stroke-width="1.5" opacity="0.6"/>
+  <!-- Stylized B monogram with beauty flourish -->
+  <path d="M 32 26 L 50 26 C 60 26 66 31 66 38 C 66 43 62 47 56 48.5 C 64 50 69 55 69 63 C 69 71 62 76 50 76 L 32 76 Z" fill="none" stroke="url(#goldGrad)" stroke-width="4" stroke-linejoin="round"/>
+  <path d="M 32 50 L 51 50" fill="none" stroke="url(#goldGrad)" stroke-width="3.5"/>
+  <!-- Subtle sparkle star -->
+  <polygon points="72,24 73.5,28 77.5,29.5 73.5,31 72,35 70.5,31 66.5,29.5 70.5,28" fill="url(#goldGrad)"/>
+</svg>
